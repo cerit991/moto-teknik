@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Teknik - Profesyonel Motor Servisi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .service-card {
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Moto Teknik</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#anasayfa">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hakkimizda">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="anasayfa">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img3.jpeg" class="d-block w-100" alt="Hero 1" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img2.jpeg" class="d-block w-100" alt="Hero 2" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img1.jpeg" class="d-block w-100" alt="Hero 3" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/atölye1.jpeg" class="d-block w-100" alt="Hero 4" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/atölye2.jpeg" class="d-block w-100" alt="Hero 5" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img4.jpeg" class="d-block w-100" alt="Hero 6" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img5.jpeg" class="d-block w-100" alt="Hero 7" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img6.jpeg" class="d-block w-100" alt="Hero 8" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img7.jpeg" class="d-block w-100" alt="Hero 9" style="height: 80vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img8.jpeg" class="d-block w-100" alt="Hero 10" style="height: 80vh; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Önceki</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Sonraki</span>
+            </button>
+        </div>
+    </section>
+
+    <style>
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 60vh !important;
+            }
+        }
+    </style>
+
+    <!-- Hizmetler -->
+    <section class="py-5" id="hizmetler">
+        <div class="container">
+            <h2 class="text-center mb-5">Hizmetlerimiz</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Genel Bakım</h5>
+                            <p class="card-text">Periyodik bakım ve kontrol hizmetleri ile motorunuzun ömrünü uzatın.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-gear-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Motor Tamiri</h5>
+                            <p class="card-text">Antepli Onur ustanın profesyonel teknikleriyle her türlü motor arızasına çözüm üretiyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-speedometer2 fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Performans İyileştirme</h5>
+                            <p class="card-text">Motorunuzun performansını artıracak profesyonel çözümler.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section class="bg-light py-5" id="hakkimizda">
+        <div class="container">
+            <h2 class="text-center mb-5">Hakkımızda</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="pe-lg-4">
+                        <p class="lead mb-4">Kendini bu işe adamış Antepli Onur ustanın 20 yılı aşkın tecrübesi ile  motosiklet severlere en iyi hizmeti sunmaktayız.</p>
+                        <p class="mb-4">Profesyonel ekibimiz ve modern ekipmanlarımızla her türlü motor bakım ve onarım işlemini gerçekleştiriyoruz.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-primary me-2 fs-5"></i>
+                                <span>Profesyonel Ekip</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-primary me-2 fs-5"></i>
+                                <span>Modern Ekipmanlar</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-primary me-2 fs-5"></i>
+                                <span>Garantili Hizmet</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative" style="height: 300px; max-width: 100%; margin: 0 auto;">
+                        <img src="img/atölye1.jpeg" class="img-fluid rounded shadow-lg" alt="Atölye" 
+                            style="width: 60%; position: absolute; left: 0; top: 0; z-index: 2; border: 5px solid white; max-width: 100%;">
+                        <img src="img/atölye2.jpeg" class="img-fluid rounded shadow-lg" alt="Atölye" 
+                            style="width: 60%; position: absolute; right: -15%; bottom: 0; z-index: 1; border: 5px solid white; max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section class="py-5" id="iletisim">
+        <div class="container">
+            <h2 class="text-center mb-5">İletişim</h2>
+            
+            <!-- Resim Galerisi -->
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="overflow-hidden rounded shadow">
+                        <img src="img/img1.jpeg" class="gallery-img" alt="Servis Görüntüsü 1">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="overflow-hidden rounded shadow">
+                        <img src="img/img3.jpeg" class="gallery-img" alt="Servis Görüntüsü 2">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="overflow-hidden rounded shadow">
+                        <img src="img/img2.jpeg" class="gallery-img" alt="Servis Görüntüsü 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mx-auto mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4">İletişim Bilgileri</h5>
+                            <div class="d-flex flex-column gap-3">
+                                <p class="mb-0"><i class="bi bi-geo-alt-fill me-2 text-primary"></i>Adres: Çakal Deresi Başarı Koleji mevkii</p>
+                                <p class="mb-0">
+                                    <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                                    <a href="tel:+905343063449" class="text-dark text-decoration-none">Telefon: (534) 306 34 49</a>
+                                </p>
+                                <p class="mb-0"><i class="bi bi-clock-fill me-2 text-primary"></i>Çalışma Saatleri: Hafta içi 09:00-18:00</p>
+                                <p class="mb-0">
+                                    <a href="https://www.instagram.com/moto_teknik_" target="_blank" class="text-dark text-decoration-none">
+                                        <i class="bi bi-instagram me-2 text-primary"></i>Instagram: @moto_teknik_
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Moto Teknik - Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
