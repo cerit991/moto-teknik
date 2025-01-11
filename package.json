@@ -1,0 +1,15 @@
+{
+  "name": "moto-teknik",
+  "version": "1.0.0",
+  "description": "Motor teknik servis web sitesi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
